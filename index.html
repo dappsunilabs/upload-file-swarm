@@ -1,0 +1,21 @@
+<html>
+  <head>
+      <script src="https://unpkg.com/@erebos/swarm-browser/dist/erebos.swarm.production.js"></script>
+    <script>
+    const client = new Erebos.swarm.SwarmClient({
+      http: 'https://swarm-gateways.net',
+    })
+    </script>
+  </head>
+
+<body>
+  <div>
+   <label for="input-file">Specify a file:</label><br>
+   <input type="file" id="input-file">
+  </div>
+
+  <textarea id="content-target"></textarea>
+
+</body>
+
+</html>
