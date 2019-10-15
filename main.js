@@ -16,7 +16,7 @@ function placeFileContent(target, file) {
     client.bzz
       .upload(content,
               { contentType: 'text/html' })
-       .then(hash => {console.log(hash); target.value=content;})
+       .then(hash => {target.value="Your file is now on swarm at https://swarm-gateways.net/bzz:/"+hash+ '\n'; target.value=target.value+ '\n'+ content;})
   	//target.value = content
   }).catch(error => console.log(error))
 }
