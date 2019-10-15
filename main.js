@@ -1,5 +1,7 @@
-document.getElementById('input-file')
-  .addEventListener('change', getFile)
+window.onload = function () {
+    	document.getElementById('input-file')
+  		.addEventListener('change', getFile)
+    }
 
 function getFile(event) {
 	const input = event.target
